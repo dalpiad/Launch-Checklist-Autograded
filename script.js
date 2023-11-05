@@ -14,4 +14,11 @@ window.addEventListener("load", function() {
         // Below this comment call the appropriate helper functions to pick a planet fom the list of planets and add that information to your destination.
     })
     
+    let form = document.getElementById("testForm");
+    form.addEventListener("submit", formSubmission(form,
+        List,
+        form.querySelector("input[name=pilotName]"),
+        form.querySelector("input[name=copilotName]"),
+        form.querySelector("input[name=fuelLevel]"),
+        form.querySelector("input[name=cargoMass]")));
  });
