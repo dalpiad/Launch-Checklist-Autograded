@@ -36,8 +36,6 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
     if (validateInput(pilot) === "Empty" || validateInput(copilot) === "Empty" 
     || validateInput(fuelLevel) === "Empty" || validateInput(cargoLevel) === "Empty" ) {
         alert('All fields are required');
-    } else if (validateInput(pilot) === "Is a Number" || validateInput(copilot) === "Is a Number") {
-        alert('A number is not a valid input for the Pilot or Copilot');
     } else if (validateInput(fuelLevel) === "Not a Number" || validateInput(cargoLevel) === "Not a Number") {
         alert('The Fuel Level and Cargo Mass must be a number');
     } else {
